@@ -44,68 +44,43 @@
     <main>
       <section class="hero section container" id="hero">
         <div class="hero-content reveal">
-          <p class="eyebrow">Desarrollador semisenior • Backend • Calidad • Cloud</p>
-          <h1>
-            Construyo soluciones web con enfoque en calidad, datos y aprendizaje continuo.
-          </h1>
+          <p class="hero-pill">Hola, soy</p>
+          <h1>Javier <span>Aguilar</span></h1>
+          <h2>Desarrollador Full Stack</h2>
           <p class="hero-copy">
-            Me interesa crear aplicaciones útiles, entender cómo funcionan los sistemas por dentro,
-            trabajar con bases de datos, servidores, despliegues y servicios en la nube.
+            Construyo soluciones web con enfoque en calidad, datos y aprendizaje continuo.
+            Me interesa crear aplicaciones útiles, entender cómo funcionan los sistemas por dentro
+            y trabajar con bases de datos, servidores, despliegues y servicios en la nube.
           </p>
 
           <div class="hero-actions">
-            <a href="#projects" class="btn btn-primary">Ver proyectos</a>
-            <a href="#contact" class="btn btn-secondary">Contactarme</a>
+            <a href="#projects" class="btn btn-primary">Ver proyectos <span aria-hidden="true">→</span></a>
+            <a href="#contact" class="btn btn-secondary">Contactarme <span aria-hidden="true">✉</span></a>
           </div>
 
-          <div class="hero-badges">
-            <span>Python</span>
-            <span>Django</span>
-            <span>Java</span>
-            <span>PostgreSQL</span>
-            <span>Azure</span>
-            <span>Docker</span>
-          </div>
-
-          <div class="typing-wrap">
-            <span class="typing-label">Actualmente estoy fortaleciendo:</span>
-            <span class="typing-text" id="typingText"></span>
+          <div class="hero-socials" aria-label="Enlaces sociales">
+            <a href="https://github.com/JavierIsma05" target="_blank" rel="noreferrer" aria-label="GitHub">GH</a>
+            <a href="https://www.linkedin.com/in/javier-ismael-aguilar-armijos-182006201/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiUNFHDlJSdWIJq0WQLCoiA%3D%3D" target="_blank" rel="noreferrer" aria-label="LinkedIn">in</a>
+            <a href="mailto:javismael.z2000@gmail.com" aria-label="Correo">✉</a>
           </div>
         </div>
 
         <div class="hero-visual reveal">
-          <div class="terminal-card">
-            <div class="terminal-toolbar">
-              <span></span>
-              <span></span>
-              <span></span>
-            </div>
-            <div class="terminal-body">
-              <p><span class="prompt">$</span> python manage.py test</p>
-              <p class="success">✓ Tests ejecutados correctamente</p>
-              <p><span class="prompt">$</span> docker compose up -d</p>
-              <p class="success">✓ Servicio desplegado en contenedor</p>
-              <p><span class="prompt">$</span> psql -d appdb</p>
-              <p class="success">✓ Conexión con PostgreSQL establecida</p>
-            </div>
+          <div class="profile-card">
+            <img src="assets/img/perfil.jpg" alt="Foto de perfil de Javier Aguilar" />
           </div>
 
-          <div class="stats-panel">
-            <div class="stat-item">
-              <strong class="counter" data-target="10">0</strong>
-              <span>tecnologías exploradas</span>
+          <div class="availability-card" aria-label="Disponibilidad profesional">
+            <div class="availability-status">
+              <span></span>
+              Disponible para trabajar
             </div>
-            <div class="stat-item">
-              <strong class="counter" data-target="5">0</strong>
-              <span>áreas de interés</span>
-            </div>
-            <div class="stat-item">
-              <strong class="counter" data-target="3">0</strong>
-              <span>proyectos destacados</span>
-            </div>
-            <div class="stat-item">
-              <strong class="counter" data-target="100">0</strong>
-              <span>ganas de aprender</span>
+            <div class="code-snippet">
+              <p><span>const</span> dev = {</p>
+              <p>  role: <strong>'Full Stack'</strong>,</p>
+              <p>  focus: <strong>'Quality & Data'</strong>,</p>
+              <p>  location: <strong>'Ecuador'</strong></p>
+              <p>};</p>
             </div>
           </div>
         </div>
@@ -114,7 +89,6 @@
       <section class="section container" id="about">
         <div class="section-heading reveal">
           <p class="eyebrow">Sobre mí</p>
-          <h2>Un perfil técnico con curiosidad, criterio y ganas de crecer.</h2>
         </div>
 
         <div class="about-grid">
@@ -140,7 +114,6 @@
       <section class="section container" id="skills">
         <div class="section-heading reveal">
           <p class="eyebrow">Habilidades técnicas</p>
-          <h2>Un stack amplio orientado a construir con calidad y mantener sistemas sostenibles.</h2>
         </div>
 
         <div class="skills-grid">
@@ -236,15 +209,15 @@
 
             <div class="featured-stats">
               <div class="featured-stat">
-                <strong data-target="12">0</strong>
+                <strong data-target="12">80</strong>
                 <span>Módulos desarrollados</span>
               </div>
               <div class="featured-stat">
-                <strong data-target="8">0</strong>
+                <strong data-target="8">4</strong>
                 <span>Tecnologías utilizadas</span>
               </div>
               <div class="featured-stat">
-                <strong data-target="10">0</strong>
+                <strong data-target="10">25</strong>
                 <span>Funcionalidades implementadas</span>
               </div>
               <div class="featured-stat">
@@ -255,8 +228,7 @@
 
             <div class="featured-actions">
               <a href="projects/marc21.html" class="btn btn-primary">Ver proyecto</a>
-              <a href="projects/marc21.html#carousel" class="btn btn-secondary">Ver galería</a>
-              <a href="#skills" class="btn btn-secondary">Tecnologías</a>
+              
             </div>
           </div>
         </article>
@@ -300,7 +272,7 @@
           <article class="achievement-card reveal">✔ Sistema seguro mediante autenticación.</article>
           <article class="achievement-card reveal">✔ Mejor experiencia para usuarios administrativos.</article>
         </div>
-
+        <br>
         <div class="timeline-section reveal">
           <h3>Línea de tiempo del proyecto</h3>
           <div class="project-timeline">
@@ -371,15 +343,13 @@
               </div>
               <div class="project-actions">
                 <a href="projects/istqb.html" class="btn btn-primary">Ver proyecto</a>
-                <a href="#" class="btn btn-secondary">Código</a>
-                <a href="projects/istqb.html" class="btn btn-secondary">Detalles</a>
               </div>
             </div>
           </article>
 
           <article class="project-card reveal" data-category="backend">
             <div class="project-preview project-preview-alt">
-              <img src="assets/img/marc21/1.png" alt="Pantalla del proyecto MARC 21" />
+              
             </div>
             <div class="project-body">
               <span class="project-badge">En desarrollo</span>
@@ -391,9 +361,7 @@
                 <span>SQL</span>
               </div>
               <div class="project-actions">
-                <a href="#" class="btn btn-secondary">Ver demo</a>
-                <a href="#" class="btn btn-secondary">Código</a>
-                <a href="#" class="btn btn-secondary">Detalles</a>
+                <a href="#" class="btn btn-secondary">Ver proyecto</a>
               </div>
             </div>
           </article>
@@ -410,9 +378,7 @@
                 <span>CSS</span>
               </div>
               <div class="project-actions">
-                <a href="#" class="btn btn-secondary">Ver demo</a>
-                <a href="#" class="btn btn-secondary">Código</a>
-                <a href="#" class="btn btn-secondary">Detalles</a>
+                <a href="#" class="btn btn-secondary">Ver proyecto</a>
               </div>
             </div>
           </article>
@@ -429,9 +395,7 @@
                 <span>Deploy</span>
               </div>
               <div class="project-actions">
-                <a href="#" class="btn btn-secondary">Ver demo</a>
-                <a href="#" class="btn btn-secondary">Código</a>
-                <a href="#" class="btn btn-secondary">Detalles</a>
+                <a href="#" class="btn btn-secondary">Ver proyecto</a>
               </div>
             </div>
           </article>
@@ -448,9 +412,7 @@
                 <span>UI</span>
               </div>
               <div class="project-actions">
-                <a href="#" class="btn btn-secondary">Ver demo</a>
-                <a href="#" class="btn btn-secondary">Código</a>
-                <a href="#" class="btn btn-secondary">Detalles</a>
+                <a href="#" class="btn btn-secondary">Ver proyecto</a>
               </div>
             </div>
           </article>
@@ -467,9 +429,7 @@
                 <span>API</span>
               </div>
               <div class="project-actions">
-                <a href="#" class="btn btn-secondary">Ver demo</a>
-                <a href="#" class="btn btn-secondary">Código</a>
-                <a href="#" class="btn btn-secondary">Detalles</a>
+                <a href="#" class="btn btn-secondary">Ver proyecto</a>
               </div>
             </div>
           </article>

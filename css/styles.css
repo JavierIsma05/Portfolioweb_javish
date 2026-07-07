@@ -1,13 +1,13 @@
 :root {
-  --bg: #0d1b34;
-  --bg-soft: rgba(18, 29, 48, 0.92);
-  --surface: rgba(22, 34, 55, 0.92);
-  --surface-strong: rgba(27, 42, 66, 0.96);
+  --bg: #05080e;
+  --bg-soft: rgba(10, 14, 24, 0.92);
+  --surface: rgba(17, 22, 36, 0.92);
+  --surface-strong: rgba(20, 25, 42, 0.96);
   --text: #eef3ff;
-  --muted: #a4b9d4;
-  --primary: #4b8cff;
-  --primary-strong: #79b5ff;
-  --accent: #ff8e47;
+  --muted: #a7adbb;
+  --primary: #8b5cf6;
+  --primary-strong: #a66cff;
+  --accent: #24d18b;
   --border: rgba(255, 255, 255, 0.08);
   --shadow: 0 18px 36px rgba(0, 0, 0, 0.22);
   --radius: 24px;
@@ -36,8 +36,9 @@ html {
 
 body {
   font-family: "Segoe UI", Roboto, Inter, Arial, sans-serif;
-  background: radial-gradient(circle at top left, rgba(75, 140, 255, 0.12), transparent 30%),
-    linear-gradient(135deg, var(--bg), #152543 72%);
+  background: radial-gradient(circle at 78% 20%, rgba(139, 92, 246, 0.2), transparent 28%),
+    radial-gradient(circle at 12% 16%, rgba(36, 209, 139, 0.08), transparent 22%),
+    linear-gradient(135deg, var(--bg), #090d16 72%);
   color: var(--text);
   line-height: 1.75;
   min-height: 100vh;
@@ -77,8 +78,8 @@ a {
 .background-grid {
   position: fixed;
   inset: 0;
-  background: radial-gradient(circle at 18% 18%, rgba(75, 140, 255, 0.14), transparent 18%),
-    radial-gradient(circle at 82% 12%, rgba(255, 142, 71, 0.1), transparent 18%);
+  background: radial-gradient(circle at 72% 22%, rgba(139, 92, 246, 0.18), transparent 20%),
+    radial-gradient(circle at 18% 78%, rgba(68, 117, 255, 0.08), transparent 18%);
   pointer-events: none;
   z-index: -1;
 }
@@ -88,8 +89,8 @@ a {
   top: 0;
   z-index: 1000;
   backdrop-filter: blur(16px);
-  background: rgba(14, 25, 42, 0.88);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+  background: rgba(5, 8, 14, 0.86);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
 body.theme-amber .site-header {
@@ -112,13 +113,13 @@ body.theme-amber .site-header {
 
 .brand {
   font-weight: 800;
-  letter-spacing: 0.2em;
-  color: var(--primary-strong);
-  font-size: 1.05rem;
-  border: 1px solid var(--border);
-  padding: 0.65rem 0.9rem;
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.04);
+  letter-spacing: 0;
+  color: var(--text);
+  font-size: 1.25rem;
+  border: 0;
+  padding: 0;
+  border-radius: 0;
+  background: transparent;
 }
 
 .nav-links {
@@ -134,7 +135,7 @@ body.theme-amber .site-header {
 
 .nav-links a:hover,
 .nav-links a.active {
-  color: var(--text);
+  color: var(--primary-strong);
 }
 
 .menu-toggle {
@@ -172,7 +173,7 @@ body.theme-amber .site-header {
 .btn-primary {
   color: white;
   background: linear-gradient(120deg, var(--primary), var(--primary-strong));
-  box-shadow: 0 10px 30px rgba(47, 126, 247, 0.2);
+  box-shadow: 0 10px 30px rgba(139, 92, 246, 0.28);
 }
 
 .btn-secondary {
@@ -183,10 +184,33 @@ body.theme-amber .site-header {
 
 .hero {
   display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 2.5rem;
+  grid-template-columns: minmax(0, 1fr) minmax(360px, 0.9fr);
+  gap: 4rem;
   align-items: center;
-  padding-top: 5rem;
+  min-height: calc(100vh - 73px);
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.hero-content {
+  max-width: 640px;
+}
+
+.hero-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 0.45rem 0.85rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.hero-pill::before {
+  content: "👋";
 }
 
 .eyebrow {
@@ -206,6 +230,25 @@ body.theme-amber .site-header {
   margin-bottom: 1rem;
 }
 
+.hero h1 {
+  font-size: clamp(3.1rem, 7vw, 5rem);
+  line-height: 0.98;
+  letter-spacing: 0;
+  margin-bottom: 0.85rem;
+}
+
+.hero h1 span {
+  color: var(--primary-strong);
+  text-shadow: 0 0 34px rgba(166, 108, 255, 0.28);
+}
+
+.hero h2 {
+  color: var(--muted);
+  font-size: clamp(1.45rem, 3vw, 2rem);
+  line-height: 1.25;
+  margin-bottom: 1.4rem;
+}
+
 .hero-copy,
 .about-card p,
 .skill-card li,
@@ -216,11 +259,120 @@ body.theme-amber .site-header {
   color: var(--muted);
 }
 
+.hero-copy {
+  max-width: 620px;
+  font-size: 1.08rem;
+}
+
 .hero-actions {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+}
+
+.hero-socials {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.hero-socials a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.6rem;
+  height: 2.6rem;
+  color: #7f8796;
+  font-weight: 800;
+  border-radius: 50%;
+  transition: color 0.2s ease, background 0.2s ease, transform 0.2s ease;
+}
+
+.hero-socials a:hover {
+  color: var(--text);
+  background: rgba(255, 255, 255, 0.06);
+  transform: translateY(-2px);
+}
+
+.hero-visual {
+  position: relative;
+  min-height: 520px;
+}
+
+.profile-card {
+  position: relative;
+  width: min(100%, 430px);
+  height: 430px;
+  margin-left: auto;
+  overflow: hidden;
+  border-radius: 18px;
+  border: 1px solid rgba(166, 108, 255, 0.24);
+  background: radial-gradient(circle at 70% 35%, rgba(139, 92, 246, 0.45), transparent 42%),
+    rgba(255, 255, 255, 0.04);
+  box-shadow: 0 28px 80px rgba(0, 0, 0, 0.34);
+}
+
+.profile-card::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 58%, rgba(5, 8, 14, 0.22));
+  pointer-events: none;
+}
+
+.profile-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.availability-card {
+  position: absolute;
+  right: 0;
+  bottom: 30px;
+  width: min(320px, 72%);
+  padding: 1.25rem;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(13, 17, 28, 0.9);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.28);
+  backdrop-filter: blur(14px);
+}
+
+.availability-status {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+}
+
+.availability-status span {
+  width: 0.7rem;
+  height: 0.7rem;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 18px rgba(36, 209, 139, 0.65);
+}
+
+.code-snippet {
+  font-family: "Consolas", "Courier New", monospace;
+  color: #d8d9e5;
+  line-height: 1.65;
+  font-size: 0.95rem;
+}
+
+.code-snippet span {
+  color: #c084fc;
+  font-weight: 700;
+}
+
+.code-snippet strong {
+  color: #9adf8f;
+  font-weight: 700;
 }
 
 .hero-badges,
