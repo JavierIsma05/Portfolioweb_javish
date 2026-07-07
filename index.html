@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Portafolio personal de un desarrollador semisenior enfocado en backend, calidad de software, bases de datos, cloud y aprendizaje continuo."
+    />
+    <title>Javier | Portafolio Técnico</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+  </head>
+  <body>
+    <div class="background-grid" aria-hidden="true"></div>
+
+    <header class="site-header" id="top">
+      <nav class="nav container">
+        <a href="#hero" class="brand" aria-label="Inicio del portafolio">JA</a>
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Abrir menú" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="navLinks">
+          <a href="#hero">Inicio</a>
+          <a href="#about">Sobre mí</a>
+          <a href="#skills">Habilidades</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#experience">Experiencia</a>
+          <a href="#learning">Aprendizaje</a>
+          <a href="#contact">Contacto</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="btn btn-secondary" id="themeToggle" type="button">Tema ámbar</button>
+          <a href="#contact" class="btn btn-primary nav-cta">Contactarme</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section container" id="hero">
+        <div class="hero-content reveal">
+          <p class="eyebrow">Desarrollador semisenior • Backend • Calidad • Cloud</p>
+          <h1>
+            Construyo soluciones web con enfoque en calidad, datos y aprendizaje continuo.
+          </h1>
+          <p class="hero-copy">
+            Me interesa crear aplicaciones útiles, entender cómo funcionan los sistemas por dentro,
+            trabajar con bases de datos, servidores, despliegues y servicios en la nube.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">Ver proyectos</a>
+            <a href="#contact" class="btn btn-secondary">Contactarme</a>
+          </div>
+
+          <div class="hero-badges">
+            <span>Python</span>
+            <span>Django</span>
+            <span>Java</span>
+            <span>PostgreSQL</span>
+            <span>Azure</span>
+            <span>Docker</span>
+          </div>
+
+          <div class="typing-wrap">
+            <span class="typing-label">Actualmente estoy fortaleciendo:</span>
+            <span class="typing-text" id="typingText"></span>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="terminal-card">
+            <div class="terminal-toolbar">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> python manage.py test</p>
+              <p class="success">✓ Tests ejecutados correctamente</p>
+              <p><span class="prompt">$</span> docker compose up -d</p>
+              <p class="success">✓ Servicio desplegado en contenedor</p>
+              <p><span class="prompt">$</span> psql -d appdb</p>
+              <p class="success">✓ Conexión con PostgreSQL establecida</p>
+            </div>
+          </div>
+
+          <div class="stats-panel">
+            <div class="stat-item">
+              <strong class="counter" data-target="10">0</strong>
+              <span>tecnologías exploradas</span>
+            </div>
+            <div class="stat-item">
+              <strong class="counter" data-target="5">0</strong>
+              <span>áreas de interés</span>
+            </div>
+            <div class="stat-item">
+              <strong class="counter" data-target="3">0</strong>
+              <span>proyectos destacados</span>
+            </div>
+            <div class="stat-item">
+              <strong class="counter" data-target="100">0</strong>
+              <span>ganas de aprender</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="about">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Sobre mí</p>
+          <h2>Un perfil técnico con curiosidad, criterio y ganas de crecer.</h2>
+        </div>
+
+        <div class="about-grid">
+          <article class="about-card reveal">
+            <h3>Qué me impulsa</h3>
+            <p>
+              Soy un desarrollador que disfruta construir soluciones con propósito,
+              entender los sistemas de forma profunda y mejorar continuamente. Me interesa la calidad,
+              la automatización, la trazabilidad y el valor real que aporta el software.
+            </p>
+          </article>
+          <article class="about-card reveal">
+            <h3>Cómo trabajo</h3>
+            <p>
+              Me gusta trabajar con orden, documentar decisiones y pensar en escalabilidad desde
+              el inicio. He trabajado con tecnologías web, bases de datos, APIs y despliegues, y
+              sigo fortaleciendo mi conocimiento en arquitectura, testing y cloud.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="skills">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Habilidades técnicas</p>
+          <h2>Un stack amplio orientado a construir con calidad y mantener sistemas sostenibles.</h2>
+        </div>
+
+        <div class="skills-grid">
+          <article class="skill-card reveal">
+            <h3>Backend</h3>
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Java</li>
+              <li>APIs REST</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Base de datos</h3>
+            <ul>
+              <li>PostgreSQL</li>
+              <li>SQL</li>
+              <li>Replicación homogénea</li>
+              <li>Replicación heterogénea</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Calidad de software</h3>
+            <ul>
+              <li>Testing</li>
+              <li>STLC</li>
+              <li>ISTQB</li>
+              <li>Casos de prueba y trazabilidad</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Cloud y servidores</h3>
+            <ul>
+              <li>Azure</li>
+              <li>Despliegue de aplicaciones</li>
+              <li>Docker</li>
+              <li>Servicios web y Linux básico</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Frontend</h3>
+            <ul>
+              <li>HTML</li>
+              <li>CSS</li>
+              <li>JavaScript</li>
+              <li>Diseño responsive</li>
+            </ul>
+          </article>
+
+          <article class="skill-card reveal">
+            <h3>Móvil</h3>
+            <ul>
+              <li>Interés en apps móviles</li>
+              <li>Aprendizaje continuo</li>
+              <li>UX y experiencias de usuario</li>
+              <li>Prototipos funcionales</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="featured">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Proyecto destacado</p>
+          <h2>Plataforma web para la gestión bibliográfica bajo MARC 21 en la Universidad Nacional de Loja.</h2>
+        </div>
+
+        <article class="featured-project reveal">
+          <div class="featured-project-visual">
+            <img src="assets/projects/marc-platform.svg" alt="Vista del sistema de gestión bibliográfica MARC 21" />
+          </div>
+
+          <div class="featured-project-content">
+            <p class="eyebrow">Experiencia profesional destacada</p>
+            <h3>Un proyecto que marcó un antes y un después en mi crecimiento profesional.</h3>
+            <p>
+              Desarrollé una plataforma web para la gestión bibliográfica basada en el estándar MARC 21
+              para la Facultad de la Educación, el Arte y la Comunicación de la Universidad Nacional de Loja.
+              Esta solución reemplazó procesos manuales o limitados por una aplicación web completa,
+              orientada a modernizar la catalogación, mejorar la organización de registros y fortalecer
+              la trazabilidad de la información.
+            </p>
+            <p>
+              Mi participación incluyó el análisis, diseño, desarrollo e implementación del sistema,
+              así como la construcción de la arquitectura completa, los módulos principales y la lógica
+              de negocio necesaria para gestionar registros bibliográficos con criterios de calidad,
+              seguridad y escalabilidad.
+            </p>
+
+            <div class="featured-stats">
+              <div class="featured-stat">
+                <strong data-target="12">0</strong>
+                <span>Módulos desarrollados</span>
+              </div>
+              <div class="featured-stat">
+                <strong data-target="8">0</strong>
+                <span>Tecnologías utilizadas</span>
+              </div>
+              <div class="featured-stat">
+                <strong data-target="10">0</strong>
+                <span>Funcionalidades implementadas</span>
+              </div>
+              <div class="featured-stat">
+                <strong>Capacidad escalable</strong>
+                <span>Registros bibliográficos administrados</span>
+              </div>
+            </div>
+
+            <div class="featured-actions">
+              <a href="projects/marc21.html" class="btn btn-primary">Ver proyecto</a>
+              <a href="projects/marc21.html#carousel" class="btn btn-secondary">Ver galería</a>
+              <a href="#skills" class="btn btn-secondary">Tecnologías</a>
+            </div>
+          </div>
+        </article>
+
+        <div class="section-heading reveal" style="margin-top: 2.5rem;">
+          <p class="eyebrow">Mi aporte</p>
+          <h2>Participé en cada etapa clave para convertir la idea en una solución real y funcional.</h2>
+        </div>
+
+        <div class="contribution-grid">
+          <article class="contribution-card reveal">
+            <h3>Levantamiento de requerimientos</h3>
+            <p>Entendí necesidades reales de una institución pública y las traduje en soluciones concretas.</p>
+          </article>
+          <article class="contribution-card reveal">
+            <h3>Diseño funcional y de base de datos</h3>
+            <p>Definí estructuras y flujos de trabajo apoyados en criterios de claridad y escalabilidad.</p>
+          </article>
+          <article class="contribution-card reveal">
+            <h3>Desarrollo Backend y Frontend</h3>
+            <p>Construí módulos y interfaces que facilitaron la gestión de registros bibliográficos.</p>
+          </article>
+          <article class="contribution-card reveal">
+            <h3>Validación, pruebas y despliegue</h3>
+            <p>Validé el sistema, optimicé consultas y documenté la solución para su puesta en marcha.</p>
+          </article>
+        </div>
+
+        <div class="section-heading reveal" style="margin-top: 2.5rem;">
+          <p class="eyebrow">Principales logros</p>
+          <h2>Resultados concretos que reflejan el impacto del proyecto.</h2>
+        </div>
+
+        <div class="achievements-grid">
+          <article class="achievement-card reveal">✔ Automatización del proceso bibliográfico.</article>
+          <article class="achievement-card reveal">✔ Centralización de la información.</article>
+          <article class="achievement-card reveal">✔ Organización mediante estándar MARC 21.</article>
+          <article class="achievement-card reveal">✔ Plataforma web responsive.</article>
+          <article class="achievement-card reveal">✔ Arquitectura modular.</article>
+          <article class="achievement-card reveal">✔ Base de datos PostgreSQL.</article>
+          <article class="achievement-card reveal">✔ Sistema seguro mediante autenticación.</article>
+          <article class="achievement-card reveal">✔ Mejor experiencia para usuarios administrativos.</article>
+        </div>
+
+        <div class="timeline-section reveal">
+          <h3>Línea de tiempo del proyecto</h3>
+          <div class="project-timeline">
+            <div class="timeline-step">Análisis</div>
+            <div class="timeline-arrow">↓</div>
+            <div class="timeline-step">Diseño</div>
+            <div class="timeline-arrow">↓</div>
+            <div class="timeline-step">Desarrollo</div>
+            <div class="timeline-arrow">↓</div>
+            <div class="timeline-step">Pruebas</div>
+            <div class="timeline-arrow">↓</div>
+            <div class="timeline-step">Implementación</div>
+            <div class="timeline-arrow">↓</div>
+            <div class="timeline-step">Entrega</div>
+          </div>
+        </div>
+
+        <div class="learning-highlight reveal">
+          <div class="learning-highlight-content">
+            <p class="eyebrow">Lo que aprendí</p>
+            <h3>Este proyecto consolidó mi crecimiento como desarrollador y como profesional.</h3>
+            <p>
+              Fortalecí conocimientos en ingeniería de software, arquitectura MVC/MVT, desarrollo con Django,
+              PostgreSQL, modelado de datos, gestión documental, trabajo con estándares internacionales,
+              resolución de problemas reales, comunicación con usuarios y desarrollo profesional.
+            </p>
+          </div>
+          <div class="tech-pill-group">
+            <span>Python</span>
+            <span>Django</span>
+            <span>PostgreSQL</span>
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Bootstrap</span>
+            <span>Git</span>
+            <span>GitHub</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="section container" id="projects">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Proyectos destacados</p>
+          <h2>Proyectos complementarios que muestran mis capacidades técnicas.</h2>
+          <div class="filter-bar">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="backend">Backend</button>
+            <button class="filter-btn" data-filter="qa">Calidad</button>
+            <button class="filter-btn" data-filter="cloud">Cloud</button>
+            <button class="filter-btn" data-filter="mobile">Móvil</button>
+          </div>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card reveal" data-category="qa">
+            <div class="project-preview">
+              <img src="assets/img/istqb/1.png" alt="Pantalla del proyecto ISTQB" />
+            </div>
+            <div class="project-body">
+              <span class="project-badge">Finalizado</span>
+              <h3>Plataforma STLC/ISTQB</h3>
+              <p>Gestión de pruebas, casos de prueba, defecto y trazabilidad para equipos de calidad.</p>
+              <div class="project-tags">
+                <span>Python</span>
+                <span>Testing</span>
+                <span>ISTQB</span>
+              </div>
+              <div class="project-actions">
+                <a href="projects/istqb.html" class="btn btn-primary">Ver proyecto</a>
+                <a href="#" class="btn btn-secondary">Código</a>
+                <a href="projects/istqb.html" class="btn btn-secondary">Detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="backend">
+            <div class="project-preview project-preview-alt">
+              <img src="assets/img/marc21/1.png" alt="Pantalla del proyecto MARC 21" />
+            </div>
+            <div class="project-body">
+              <span class="project-badge">En desarrollo</span>
+              <h3>Sistema web con Django y PostgreSQL</h3>
+              <p>Portal para gestionar procesos, usuarios y reportes con lógica de negocio clara.</p>
+              <div class="project-tags">
+                <span>Django</span>
+                <span>PostgreSQL</span>
+                <span>SQL</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-secondary">Ver demo</a>
+                <a href="#" class="btn btn-secondary">Código</a>
+                <a href="#" class="btn btn-secondary">Detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="qa">
+            <div class="project-preview project-preview-accent"></div>
+            <div class="project-body">
+              <span class="project-badge">Finalizado</span>
+              <h3>Dashboard de indicadores de calidad</h3>
+              <p>Visualización de defectos, cobertura y métricas esenciales para seguimiento de procesos.</p>
+              <div class="project-tags">
+                <span>JavaScript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-secondary">Ver demo</a>
+                <a href="#" class="btn btn-secondary">Código</a>
+                <a href="#" class="btn btn-secondary">Detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="cloud">
+            <div class="project-preview project-preview-cloud"></div>
+            <div class="project-body">
+              <span class="project-badge">Prototipo</span>
+              <h3>Despliegue con Docker y Azure</h3>
+              <p>Propuesta de arquitectura de despliegue con contenedores y servicios cloud.</p>
+              <div class="project-tags">
+                <span>Docker</span>
+                <span>Azure</span>
+                <span>Deploy</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-secondary">Ver demo</a>
+                <a href="#" class="btn btn-secondary">Código</a>
+                <a href="#" class="btn btn-secondary">Detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="mobile">
+            <div class="project-preview project-preview-mobile"></div>
+            <div class="project-body">
+              <span class="project-badge">Prototipo</span>
+              <h3>Prototipo de aplicación móvil</h3>
+              <p>Exploración de ideas móviles orientadas a productividad y seguimiento de tareas.</p>
+              <div class="project-tags">
+                <span>Mobile</span>
+                <span>UX</span>
+                <span>UI</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-secondary">Ver demo</a>
+                <a href="#" class="btn btn-secondary">Código</a>
+                <a href="#" class="btn btn-secondary">Detalles</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="project-card reveal" data-category="backend">
+            <div class="project-preview project-preview-admin"></div>
+            <div class="project-body">
+              <span class="project-badge">Finalizado</span>
+              <h3>Sistema de gestión académica</h3>
+              <p>Aplicación práctica para administrar datos, procesos y reportes de forma consistente.</p>
+              <div class="project-tags">
+                <span>Java</span>
+                <span>PostgreSQL</span>
+                <span>API</span>
+              </div>
+              <div class="project-actions">
+                <a href="#" class="btn btn-secondary">Ver demo</a>
+                <a href="#" class="btn btn-secondary">Código</a>
+                <a href="#" class="btn btn-secondary">Detalles</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="experience">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Experiencia y formación</p>
+          <h2>Una ruta de crecimiento enfocada en desarrollo, calidad y sistemas escalables.</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>Desarrollo de proyectos web</h3>
+              <p>Construcción de soluciones con enfoque en legibilidad, reutilización y mantenimiento.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>Aprendizaje de calidad de software</h3>
+              <p>Fortalecimiento de prácticas de testing, trazabilidad y mejora continua.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>Trabajo con Django y PostgreSQL</h3>
+              <p>Diseño de APIs, lógica de negocio y modelos de datos robustos.</p>
+            </div>
+          </article>
+          <article class="timeline-item reveal">
+            <span class="timeline-dot"></span>
+            <div>
+              <h3>Exploración de Azure, Docker y servidores</h3>
+              <p>Interés activo por despliegues, infraestructura básica y operación de aplicaciones.</p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="learning">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Lo que estoy aprendiendo</p>
+          <h2>Estoy construyendo una base sólida para crecer con mayor profundidad técnica.</h2>
+        </div>
+
+        <div class="learning-grid">
+          <article class="learning-card reveal">Azure</article>
+          <article class="learning-card reveal">DevOps básico</article>
+          <article class="learning-card reveal">Despliegue de aplicaciones</article>
+          <article class="learning-card reveal">Automatización de pruebas</article>
+          <article class="learning-card reveal">Arquitectura backend</article>
+          <article class="learning-card reveal">Aplicaciones móviles</article>
+          <article class="learning-card reveal">Buenas prácticas de seguridad</article>
+          <article class="learning-card reveal">Optimización de bases de datos</article>
+        </div>
+      </section>
+
+      <section class="section container" id="approach">
+        <div class="section-heading reveal">
+          <p class="eyebrow">Mi forma de trabajar</p>
+          <h2>Principios que guían mi manera de construir software.</h2>
+        </div>
+
+        <div class="approach-grid">
+          <article class="approach-card reveal">
+            <h3>Construir con propósito</h3>
+            <p>Entender el problema antes de escribir código.</p>
+          </article>
+          <article class="approach-card reveal">
+            <h3>Priorizar la calidad</h3>
+            <p>Elegir claridad, prueba y mantenimiento por encima de atajos.</p>
+          </article>
+          <article class="approach-card reveal">
+            <h3>Documentar y probar</h3>
+            <p>Reducir incertidumbre y facilitar el crecimiento del sistema.</p>
+          </article>
+          <article class="approach-card reveal">
+            <h3>Aprender antes de improvisar</h3>
+            <p>Explorar, investigar y validar nuevas ideas con criterio.</p>
+          </article>
+          <article class="approach-card reveal">
+            <h3>Mejorar continuamente</h3>
+            <p>Buscar eficiencia, orden y mejores prácticas en cada iteración.</p>
+          </article>
+          <article class="approach-card reveal">
+            <h3>Pensar en escalabilidad</h3>
+            <p>Construir pensando en el mantenimiento y el crecimiento futuro.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="section container" id="contact">
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p class="eyebrow">Contacto</p>
+            <h2>Estoy abierto a colaborar, aprender y construir soluciones que generen valor.</h2>
+            <p>
+              Si buscas a alguien con interés por backend, calidad, bases de datos, cloud y mejora continua,
+              me encantaría conversar.
+            </p>
+            <div class="social-links">
+              <a href="mailto:javismael.z2000@gmail.com">Correo</a>
+              <a href="https://github.com/JavierIsma05" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://www.linkedin.com/in/javier-ismael-aguilar-armijos-182006201/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BiUNFHDlJSdWIJq0WQLCoiA%3D%3D" target="_blank" rel="noreferrer">LinkedIn</a>
+              <a href="https://wa.me/997793401" target="_blank" rel="noreferrer">WhatsApp</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <label>
+              Nombre
+              <input type="text" id="name" name="name" placeholder="Tu nombre" required />
+            </label>
+            <label>
+              Correo
+              <input type="email" id="email" name="email" placeholder="tu@email.com" required />
+            </label>
+            <label>
+              Mensaje
+              <textarea id="message" name="message" rows="5" placeholder="Cuéntame sobre tu idea o proyecto" required></textarea>
+            </label>
+            <button type="submit" class="btn btn-primary">Enviar mensaje</button>
+            <p class="form-message" id="formMessage" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">↑</button>
+
+    <footer class="site-footer">
+      <div class="container footer-content">
+        <p>Javish Leamsi</p>
+        <p>© <span id="year"></span> · Desarrollado con HTML, CSS y JavaScript.</p>
+        <div class="footer-links">
+          <a href="#hero">Inicio</a>
+          <a href="#projects">Proyectos</a>
+          <a href="#contact">Contacto</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+  </body>
+</html>

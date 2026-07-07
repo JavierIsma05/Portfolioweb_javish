@@ -1,0 +1,92 @@
+@media (max-width: 900px) {
+  .hero,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .skills-grid,
+  .learning-grid,
+  .approach-grid,
+  .projects-grid,
+  .about-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .nav {
+    position: relative;
+  }
+
+  .menu-toggle {
+    display: inline-block;
+    margin-left: auto;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    top: calc(100% + 0.7rem);
+    right: 0;
+    background: var(--surface-strong);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+    padding: 1rem;
+    width: min(280px, calc(100vw - 2rem));
+    box-shadow: var(--shadow);
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-cta {
+    display: none;
+  }
+
+  .hero {
+    padding-top: 3.5rem;
+  }
+
+  .skills-grid,
+  .projects-grid,
+  .learning-grid,
+  .about-grid,
+  .approach-grid,
+  .contribution-grid,
+  .achievements-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .featured-project,
+  .learning-highlight {
+    grid-template-columns: 1fr;
+  }
+
+  .stats-panel {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 520px) {
+  .section {
+    padding: 4.5rem 0;
+  }
+
+  .hero h1,
+  .section-heading h2,
+  .contact-info h2 {
+    font-size: 1.8rem;
+  }
+
+  .stats-panel {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
